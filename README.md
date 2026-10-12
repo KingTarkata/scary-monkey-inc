@@ -3,6 +3,10 @@
 Static site (HTML/CSS/JS, no build step) served by nginx in Docker.
 
 ## Run on your NAS
+**Option 0 (recommended if the repo is cloned on the NAS): serve the local files**
+Use `docker-compose.local.yml` in a Portainer web-editor stack. First change both `/volume1/docker/scary-monkey-inc` paths to where the clone really lives (find it in the NAS file manager; it must be an absolute path).
+Edit files in `site/` and refresh the browser to see changes. Update the site with `git pull` in the clone. Restart the container only if you change `nginx.conf`.
+
 **Option A: paste-in stack (Portainer, Container Manager "Project" with pasted YAML)**
 Use `docker-compose.nas.yml`. It pulls a prebuilt image, so no other files are needed.
 The image is built by GitHub Actions on every push to `main` (or run *Publish Docker image* manually from the Actions tab).
