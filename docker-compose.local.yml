@@ -6,6 +6,12 @@ services:
     image: nginx:1.27-alpine
     container_name: scary-monkey-web
     restart: unless-stopped
+    # Run as the owner of the site files (uid 1000 / gid 10 on the NAS) so NAS permissions/ACLs
+    # allow reads. Non-root, so nginx needs writable scratch dirs, provided via tmpfs below.
+    user: "1000:10"
+    tmpfs:
+      - /var/cache/nginx:uid=1000,gid=10
+      - /run:uid=1000,gid=10
     ports:
       - "8080:80"
     volumes:
