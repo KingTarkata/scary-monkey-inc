@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    container_name: scary-monkey-web
+    restart: unless-stopped
+    ports:
+      - "${HOST_PORT:-8080}:80"
+    # Live-edit: changes to ./site show up on refresh without rebuilding.
+    volumes:
+      - ./site:/usr/share/nginx/html:ro

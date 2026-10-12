@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Scary Monkey Inc. logo">
+  <circle cx="14" cy="34" r="9" fill="#7a4a2b"/><circle cx="50" cy="34" r="9" fill="#7a4a2b"/>
+  <circle cx="14" cy="34" r="5" fill="#e8b48a"/><circle cx="50" cy="34" r="5" fill="#e8b48a"/>
+  <ellipse cx="32" cy="30" rx="19" ry="20" fill="#7a4a2b"/>
+  <ellipse cx="32" cy="38" rx="14" ry="12" fill="#e8b48a"/>
+  <circle cx="25" cy="29" r="5.5" fill="#fff"/><circle cx="39" cy="29" r="5.5" fill="#fff"/>
+  <circle cx="25" cy="30" r="2.4" fill="#d1002f"/><circle cx="39" cy="30" r="2.4" fill="#d1002f"/>
+  <path d="M20 22 L29 25 M44 22 L35 25" stroke="#1a0f0a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M22 42 Q32 52 42 42 L40 44 L37 41 L34 45 L31 41 L28 45 L25 41 Z" fill="#fff" stroke="#1a0f0a" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>
