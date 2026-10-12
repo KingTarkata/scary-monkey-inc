@@ -10,4 +10,4 @@ services:
       - "8080:80"
     volumes:
       - /volume1/docker/scary-monkey-inc/site:/usr/share/nginx/html:ro
-      - /volume1/docker/scary-monkey-inc/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - /volume1/docker/scary-monkey-inc/nginx:/etc/nginx/conf.d:ro
