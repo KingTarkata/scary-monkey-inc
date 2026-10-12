@@ -1,0 +1,9 @@
+# Paste-able stack for Portainer / Container Manager: no local files needed.
+# Pulls the image built by .github/workflows/docker.yml.
+services:
+  web:
+    image: ghcr.io/kingtarkata/scary-monkey-inc:latest
+    container_name: scary-monkey-web
+    restart: unless-stopped
+    ports:
+      - "8080:80"

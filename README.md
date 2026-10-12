@@ -3,6 +3,13 @@
 Static site (HTML/CSS/JS, no build step) served by nginx in Docker.
 
 ## Run on your NAS
+**Option A: paste-in stack (Portainer, Container Manager "Project" with pasted YAML)**
+Use `docker-compose.nas.yml`. It pulls a prebuilt image, so no other files are needed.
+The image is built by GitHub Actions on every push to `main` (or run *Publish Docker image* manually from the Actions tab).
+If the repo/package is private, make the package public (GitHub > Packages > Package settings) or add `ghcr.io` as a registry with a personal access token (`read:packages`).
+
+**Option B: from a checkout (SSH, or a stack that points at the repo/folder)**
+`docker-compose.yml` builds locally, so it must run next to `Dockerfile` and `site/`.
 ```sh
 git clone <this repo> && cd scary-monkey-inc
 docker compose up -d --build        # http://<nas-ip>:8080
