@@ -24,7 +24,7 @@ Unraid/Portainer: paste the compose file as a stack.
 
 ## Editing content
 - Projects: `site/projects.json` (`category` is `game` or `other`; `image` is an optional path like `assets/foo.png`).
-- Text: `site/index.html`. Look/feel: `site/styles.css`. Replace `hello@example.com`.
+- Text: `site/index.html`. Look/feel: `site/styles.css`. The accent color is `--accent` at the top of the CSS.
 - The compose file bind-mounts `./site`, so edits appear on refresh. Rebuild (`--build`) only if you change `nginx/default.conf`.
 
 ## Going public

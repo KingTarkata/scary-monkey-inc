@@ -1,6 +1,6 @@
 :root {
   --bg: #0a0a0b; --bg2: #111113; --ink: #f2efe8; --mute: #8d8a83; --line: #26252a;
-  --accent: #ff4a1c;
+  --accent: #6dbb85;
   --max: 76rem; --pad: clamp(1.25rem, 4vw, 3rem);
   --sans: "Helvetica Neue", Helvetica, Arial, "Segoe UI", system-ui, sans-serif;
   --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
@@ -42,12 +42,12 @@ h1 { margin: 0 0 1.5rem; font-size: clamp(2.6rem, 6.6vw, 6rem); line-height: .92
 .btn.ghost:hover { border-color: var(--accent); color: var(--accent); background: transparent; }
 
 .hero-art { position: relative; display: grid; place-items: center; }
-.hero-art::before { content: ""; position: absolute; inset: 8%; background: radial-gradient(closest-side, rgba(255,74,28,.2), transparent 70%); filter: blur(30px); }
+.hero-art::before { content: ""; position: absolute; inset: 8%; background: radial-gradient(closest-side, rgba(109,187,133,.2), transparent 70%); filter: blur(30px); }
 /* The eyes are transparent cut-outs in the logo, so pupils sit BEHIND the image and show through. */
 .mascot { position: relative; width: min(100%, 34rem); aspect-ratio: 648 / 585; }
 .mascot img { position: relative; z-index: 2; display: block; width: 100%; height: auto; }
 .pupil { position: absolute; z-index: 1; width: 6%; aspect-ratio: 1; border-radius: 50%; margin: -3% 0 0 -3%;
-  background: var(--accent); box-shadow: 0 0 22px 6px rgba(255,74,28,.7); }
+  background: var(--accent); box-shadow: 0 0 22px 6px rgba(109,187,133,.65); }
 #pupilL { left: 31.1%; top: 64.4%; }
 #pupilR { left: 68.7%; top: 64.4%; }
 
